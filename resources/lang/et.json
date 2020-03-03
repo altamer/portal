@@ -1,0 +1,12 @@
+{
+    "Login": "Logi sisse",
+	"Register": "Registreeru",
+	"E-Mail Address": "E-posti aadress",
+	"Password": "Salasõna",
+	"Remember Me": "Mäleta mind",
+	"Forgot Your Password?": "Unustasid parooli?",
+	"Logout": "Logi välja",
+	"Name": "Nimi",
+	"Confirm Password": "Salasõna uuesti",
+	"These credentials do not match our records": "E-maili aadress või parool on vale"
+}

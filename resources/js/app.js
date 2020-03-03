@@ -16,8 +16,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 require('./bootstrap');
 require('bootstrap-vue');
 
-axios.defaults.baseURL = 'https://baltiteh.ee/portal';
-// window.axios.defaults.baseURL = window.location.origin;
+window.axios.defaults.baseURL = window.location.origin;
+window.axios.defaults.apiURL = 'http://localhost:5000';
 
 window.Vue = require('vue');
 window.axios = axios;
@@ -31,8 +31,7 @@ Vue.config.productionTip = false;
  */
 
 Vue.component('portal-component', require('./components/PortalComponent.vue'));
-Vue.component('insurance-component', require('./components/InsuranceComponent.vue'));
-Vue.component('purchase-component', require('./components/Purchase.vue'));
+Vue.component('table-component', require('./components/TableComponent.vue'));
 
 const app = new Vue({
     el: '#transweb'

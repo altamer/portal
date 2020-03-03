@@ -18,16 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/image/store', 'ImageController@store');
+Route::get('/contacts', 'ContactsController@get_contacts');
 
-Route::post('/addmachine', 'MachinesController@addmachine');
-Route::post('/addinsurance', 'KindlustusController@addinsurance');
-Route::get('/checkdue', 'KindlustusController@checkdue');
-Route::get('/getdue', 'KindlustusController@getdue');
-Route::get('/getmachines', 'MachinesController@getmachines');
-Route::post('/setinsurancestatus', 'KindlustusController@setinsurancestatus');
-Route::post('/setmachinestatus', 'MachinesController@setmachinestatus');
-Route::post('/updatemachine', 'MachinesController@updatemachine');
-Route::post('/updateinsurance', 'KindlustusController@updateinsurance');
 
 
